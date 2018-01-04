@@ -1,10 +1,12 @@
 // DEFINES
 $primary-color: #e8b900;
 $secondary-color: #0F4B7D;
+$third-color: #50aec5;
+
 $transition: 0.2s all ease-in-out;
 
 body, html {
-
+	font-family: 'Open Sans';
 }
 
 // HEADER
@@ -70,6 +72,126 @@ header {
 	}
 }
 
+// WRAPPER 
+#wrapper {
+	margin-top: -20px;
+}
+
+// Banner
+#banner {
+	background: $secondary-color;
+	background: {
+		image: url('../img/banner2.jpg');
+		size:cover;
+		repeat: no-repeat;
+		position: center;
+	}
+	height: 480px;
+
+	h1 {
+		font:{
+			size: 60px;
+			weight: 300;
+		}
+		color: #fff;
+		text-align: center;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0 15px;
+		text-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	}
+}
+
+#noticias {
+	background: #f1f1fd;
+	padding: 40px 0;
+	
+	h2 {
+		color: $secondary-color;
+		text-align: center;
+		margin: 20px 0 40px;
+	}
+
+	article {
+		overflow: hidden;
+		border-radius: 2px;
+		box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+
+		&:hover {
+			.picture { 
+				transform: scale(1.05); 
+				transition: $transition;
+			}
+		}
+		.header { overflow: hidden; }
+
+		.picture {
+			background: {
+				position: center;
+				repeat: no-repeat;
+				size: cover;
+			}
+			height: 160px;
+			transition: $transition;
+		}
+
+		.body {
+			padding: 15px;
+			background: #fff;
+			min-height: 120px;
+			position: relative;
+
+			h3 { 
+				font: {
+					size: 14px;
+					weight: bold;
+				}
+				color: $secondary-color;
+				margin: 0 0 10px;
+			}
+
+			h4 {
+				font-size: 11px;
+			}
+
+			.read-more {
+				position: absolute;
+				bottom: 0px;
+				margin: 0;
+				width: 100%;
+				left: 0;
+				text-align: center;
+				border-top: 1px solid #ddd;
+				
+				&:hover {
+					background: $third-color;
+					border-top: 1px solid $third-color;
+				}
+				a {
+					display: block;
+					color: $third-color;
+					padding: 6px 15px;
+
+					&:hover { color: #fff; }
+				}
+			}
+		}
+	}
+
+	.all-news {
+		text-align: center;
+		margin: 30px 0 0;
+
+		a {
+			display: inline-block;
+			background: $primary-color;
+			padding: 8px 20px;
+			color: #fff;
+			border-radius: 2px;
+		}
+	}
+}
 // FOOTER
 footer {
 	background: $secondary-color;
@@ -86,7 +208,7 @@ footer {
 	.social-media-icons { 
 		margin-top: 10px; 
 		margin-bottom: 0;
-		
+
 		a {
 			font-size: 20px;
 			opacity: 0.75;
