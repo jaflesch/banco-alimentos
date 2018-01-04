@@ -1,9 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	
+	<!-- Titles n Descriptions -->
+	<title>Banco de Alimentos de Porto Alegre</title>
+	<meta itemprop="name" content="{{ meta.app }}">
+	<meta name="author" content="{{ meta.app }}"> 
+	<meta name="keywords" content="{{ meta.keywords }}">
+	<meta itemprop="image" content="">
+	<meta name="description" content="{{ meta.description }}">
+	<meta itemprop="description" content="{{ meta.description }}">
+
+	<!-- Social Media -->
+	<meta property="fb:app_id" content="287391924775067" />
+	<meta property="og:title" content="{{ meta.app }} - {{ page_title }}" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="{{ meta.description }}" />
+	<meta property="og:url" content="{{ app.base_url }}{{ app.request_uri }}" />
+	<meta property="og:site_name" content="{{ meta.app }}" />
+	
+	<!-- Config -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="robots" content="index,follow" />
+
+	<!-- Icons -->
+	<link rel="icon" type="image/x-icon" href="{{ path.img }}/favicon/assets/img/favicon.ico?v=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="{{ path.img }}/favicon/assets/img/favicon.ico?v=1" />
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ path.img }}/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ path.img }}/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ path.img }}/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ path.img }}/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ path.img }}/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ path.img }}/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ path.img }}/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ path.img }}/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ path.img }}/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{ path.img }}/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ path.img }}/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ path.img }}/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ path.img }}/favicon/favicon.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/fontawesome/font-awesome.min.css">
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	<header>
+		<nav class="navbar navbar-skin">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="img/logo-banco-de-alimentos.png">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<!-- A rede -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">A Rede
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Quem somos</a></li>
+								<li><a href="#">Nossa história</a></li>
+								<li><a href="#">O que fazemos</a></li>
+								<li><a href="#">Como atuam os Bancos de Alimentos</a></li>
+								<li><a href="#">Bancos associados</a></li>
+								<li><a href="#">Como participar</a></li>
+								<li><a href="#">Núcleos Bancos de Alimentos</a></li>
+								<li><a href="#">Coordenação da rede</a></li>
+								<li><a href="#">Relatórios</a></li>
+								<li><a href="#">Perguntas e respostas</a></li>
 
+							</ul>
+						</li>
+						<!-- Campanhas -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Campanhas
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Sábado Solidário</a></li>
+								<li><a href="#">Super Natal</a></li>
+								<li><a href="#">Clique Alimentos</a></li>
+								<li><a href="#">Inverno sem Fome</a></li>
+								<li><a href="#">Campanha do Quilo</a></li>
+								<li><a href="#">Feiras, exposições e eventos</a></li>
+
+							</ul>
+						</li>
+						<!-- Participe -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Participe
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Por que participar</a></li>
+								<li><a href="#">Como participar</a></li>
+								<li><a href="#">Utilizando incentivos</a></li>
+								<li><a href="#">Criar um Banco de Alimentos em sua cidade</a></li>
+
+							</ul>
+						</li>
+						<!-- Nutrição -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Nutrição
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Segurança alimentar e nutricional</a></li>
+								<li><a href="#">Projetos</a></li>
+								<li><a href="#">Receitas</a></li>
+								<li><a href="#">Dicas</a></li>
+								<li><a href="#">Livros e manuais</a></li>
+								<li><a href="#">Vídeos sobre nutrição</a></li>
+							</ul>
+						</li>
+						<!-- Conteúdos -->
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Conteúdos
+							<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Notícias</a></li>
+								<li><a href="#">Resultados</a></li>
+								<li><a href="#">Releases</a></li>
+								<li><a href="#">Agenda</a></li>
+								<li><a href="#">Revistas</a></li>
+								<li><a href="#">Newsletter</a></li>
+								<li><a href="#">Vídeos</a></li>
+								<li><a href="#">Galeria</a></li>
+								<li><a href="#">Dados da Fome</a></li>
+								<li><a href="#">Clique Alimentos</a></li>
+								<li><a href="#">Papel de parede</a></li>
+								<li><a href="#">Cartão virtual</a></li>
+								<li><a href="#">Prêmios e reconhecimento</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contato</a></li> 
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- JS -->
+	<script type="text/javascript" src=""></script>
 </body>
 </html>

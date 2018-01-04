@@ -1,0 +1,70 @@
+// DEFINES
+$primary-color: #e8b900;
+$secondary-color: #0F4B7D;
+$transition: 0.2s all ease-in-out;
+
+body, html {
+
+}
+
+header {
+	.navbar-skin {
+		background: #fff;
+		padding: 10px 0px;
+		border: 0;
+		border-bottom: 2px solid $primary-color;
+		border-radius: 0;
+
+		.navbar-brand {
+			position: relative;
+			top: -15px;
+		}
+		.navbar-nav {
+			margin: 0 -15px;
+
+			>li>a {
+				color: $secondary-color;
+				
+				&:hover,&:focus {
+					background: transparent;
+					color: lighten($secondary-color, 15%);
+					text-decoration: underline;
+				}
+			}
+			@media(max-width:767px) {
+				background: $secondary-color;				
+
+				>li>a {
+					color: #fff !important;
+				}
+			}
+		}
+		.navbar-toggle {
+			margin: 6px 15px 0;
+
+			.icon-bar {
+				background: $secondary-color;
+				width: 30px;
+				height: 3px;
+
+				+ .icon-bar { margin-top: 5px; }
+			}
+		}
+	}
+
+	.dropdown-menu>li>a{
+		&:focus, &:hover { 
+			background: $secondary-color; color: #fff;
+		}
+
+		@media(max-width: 767px) {
+			background: darken($secondary-color, 10%) !important;
+			color: #dfdfdf;
+		}
+	}
+
+
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+		background: $secondary-color;
+	}
+}
