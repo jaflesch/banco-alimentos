@@ -162,18 +162,24 @@ header {
 				width: 100%;
 				left: 0;
 				text-align: center;
-				border-top: 1px solid #ddd;
-				
+				border-top: 1px solid #ddd;				
+				transition: $transition;
+
 				&:hover {
 					background: $third-color;
 					border-top: 1px solid $third-color;
+					transition: $transition;
 				}
 				a {
 					display: block;
 					color: $third-color;
 					padding: 6px 15px;
+					transition: $transition;
 
-					&:hover { color: #fff; }
+					&:hover { 
+						color: #fff;
+						transition: $transition;	
+					 }
 				}
 			}
 		}
@@ -189,6 +195,12 @@ header {
 			padding: 8px 20px;
 			color: #fff;
 			border-radius: 2px;
+			transition: $transition;
+
+			&:hover {
+				background: darken($primary-color, 5%);
+				transition: $transition;
+			}
 		}
 	}
 }
