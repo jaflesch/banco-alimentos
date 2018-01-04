@@ -7,6 +7,7 @@ body, html {
 
 }
 
+// HEADER
 header {
 	.navbar-skin {
 		background: #fff;
@@ -66,5 +67,32 @@ header {
 
 	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
 		background: $secondary-color;
+	}
+}
+
+// FOOTER
+footer {
+	background: $secondary-color;
+	color: #fff;
+	padding: 15px;
+
+	p {
+		text-align: center;
+		margin: 0;
+	}
+
+	a { color: #fff !important;}
+
+	.social-media-icons { 
+		margin-top: 10px; 
+		margin-bottom: 0;
+		
+		a {
+			font-size: 20px;
+			opacity: 0.75;
+			margin: 0 2px;
+			
+			&:hover, &:focus, &:active { opacity: 1; }
+		}
 	}
 }
