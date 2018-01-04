@@ -204,6 +204,31 @@ header {
 		}
 	}
 }
+
+#apoiadores {
+	background: darken($secondary-color,10%);
+	padding: 40px 0;
+	color: #fff;
+	
+	h2 {
+		margin: 0 0 15px;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		margin: 0 0 15px;
+		font-size: 12px;
+
+		&.highlight { 
+			font:{
+				size: 13px;
+				weight: bold;
+			}
+			margin-top: 15px;
+		}
+	}
+}
 // FOOTER
 footer {
 	background: $secondary-color;
@@ -228,5 +253,16 @@ footer {
 			
 			&:hover, &:focus, &:active { opacity: 1; }
 		}
+	}
+}
+
+// slick override/
+.slick-prev, .slick-next {
+	&:before {
+		color: $primary-color;
+		opacity: 1;
+	}
+	&:hover { 
+		&:before {color: $third-color; }
 	}
 }
