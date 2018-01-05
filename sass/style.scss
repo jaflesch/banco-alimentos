@@ -76,7 +76,7 @@ header {
 
 // WRAPPER 
 #wrapper {
-	margin-top: -20px;
+	margin-top: 70px;
 }
 
 // Banner
@@ -219,6 +219,92 @@ header {
 	}
 }
 
+#subsecoes {
+	padding: 40px 0;
+	h2 {
+		font-size: 28px;
+		color: $secondary-color;
+	}
+
+	article { position: relative; }
+
+	p { font-size: 16px; }
+
+	.img-container {
+		height: 150px;
+		margin-bottom: 20px;
+
+		img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.cta {
+		a {
+			display: inline-block;
+			background: $secondary-color;
+			color: #fff;
+			padding: 6px 12px;
+			margin-top: 20px;
+			border-radius: 2px;
+		}
+	}
+}
+
+#newsletter {
+	background: $primary-color;
+	color: $secondary-color;
+	padding: 40px 0;
+
+	h2 { margin: 0 0 10px; }
+	h3 {
+		font-size: 16px;
+		color: #f2f2fe;
+		margin: 0 0 20px;
+	}
+
+	.form-block {
+		display: block;
+		text-align: center;
+		font-size: 0;
+
+		.input {
+			border-top-left-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+	}
+	.input {
+		width: 410px;
+		background: #f1f1fd;
+		box-shadow: none;
+		border: 1px solid #000;
+		font-size: 14px;
+		padding: 6px 12px;
+
+		&:focus {
+			background: #fff;
+			outline: 0;
+			box-shadow: none;
+			border: 1px solid $third-color;
+		}
+	}
+	.btn-submit {
+		background: $secondary-color;
+		font-size: 14px;
+		color: #fff;
+		padding: 6px 12px;
+		border: 1px solid $secondary-color;
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+
+		&:hover,&:active,&:focus,&:active:focus { 
+			background: $third-color;
+			border: 1px solid $third-color;
+		}
+	}
+}
 #apoiadores {
 	background: darken($secondary-color,10%);
 	padding: 40px 0;
@@ -272,6 +358,8 @@ footer {
 
 // slick override/
 .slick-prev, .slick-next {
+	z-index: 2;
+
 	&:before {
 		color: $primary-color;
 		opacity: 1;
