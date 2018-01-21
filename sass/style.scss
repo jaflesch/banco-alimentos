@@ -249,6 +249,12 @@ header {
 			padding: 6px 12px;
 			margin-top: 20px;
 			border-radius: 2px;
+			transition: $transition;
+
+			&:hover, &:focus {
+				background: $third-color;
+				transition: $transition;
+			}
 		}
 	}
 }
@@ -298,10 +304,13 @@ header {
 		border: 1px solid $secondary-color;
 		border-top-right-radius: 2px;
 		border-bottom-right-radius: 2px;
+		transition: $transition;
 
 		&:hover,&:active,&:focus,&:active:focus { 
 			background: $third-color;
+			text-decoration: underline;
 			border: 1px solid $third-color;
+			transition: $transition;
 		}
 	}
 }
