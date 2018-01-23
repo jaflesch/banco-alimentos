@@ -10,7 +10,7 @@ body, html {
 	width: 100%;
 	overflow-x: hidden;
 }
-
+html { background: $secondary-color; }
 // HEADER
 header {
 	.navbar-skin {
@@ -29,11 +29,13 @@ header {
 
 			>li>a {
 				color: $secondary-color;
+				transition: $transition;
 				
 				&:hover,&:focus {
-					background: transparent;
+					background: #eee;
 					color: lighten($secondary-color, 15%);
 					text-decoration: underline;
+					transition: $transition;
 				}
 			}
 			@media(max-width:767px) {
@@ -68,17 +70,29 @@ header {
 		}
 	}
 
-	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-		background: #fff;	
-	}
-	.nav .open>li>a, .nav .open>li>a:focus, .nav .open>li>a:hover {
-		background: #fff;
+	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover { background: #fff; }
+	.nav .open>li>a, .nav .open>li>a:focus, .nav .open>li>a:hover { background: #fff; }
+
+	.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+		background: $secondary-color;
 	}
 }
 
 // WRAPPER 
 #wrapper {
 	margin-top: 70px;
+}
+
+// BREADCRUMB
+#breadcrumb {
+	background: $third-color;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	p {
+		color: #bedee6;
+		margin: 0;
+	}
+	a { color: #fff; }
 }
 
 // Banner
@@ -340,6 +354,56 @@ header {
 		}
 	}
 }
+
+
+// Intern pages
+#intern-content {
+	background: #f1f1f4;
+	padding: 0 0 20px;
+
+	> .container {
+		background: #fff;
+		padding: 45px 60px;
+		border-radius: 2px;
+		box-shadow: 0 0 2px rgba(#000, 0.1);
+
+
+		h1 {
+			display: inline-block;
+			font-size: 30px;
+			color: $secondary-color;
+			padding: 0 10px 4px 0;
+			margin: 0 0 20px;
+			border-bottom: 2px solid $primary-color;
+		}
+
+		h2 {
+			font: {
+				size: 18px;
+				weight: bold;
+			}
+			color: $secondary-color;
+			margin: 30px 0 10px;
+		}
+
+		p {
+			text-align: justify;
+		}
+
+		hr {
+			width: 120px;
+			border-top: 1px solid #ddd;
+
+			&.end {
+				width: calc(100% + 30px);
+				margin: 45px -15px 0;
+			}
+		}
+	}
+
+
+}
+
 // FOOTER
 footer {
 	background: $secondary-color;
