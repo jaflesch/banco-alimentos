@@ -68,9 +68,11 @@ header {
 		}
 	}
 
-
 	.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-		background: $secondary-color;
+		background: #fff;	
+	}
+	.nav .open>li>a, .nav .open>li>a:focus, .nav .open>li>a:hover {
+		background: #fff;
 	}
 }
 
