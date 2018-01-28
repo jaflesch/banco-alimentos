@@ -403,8 +403,72 @@ header {
 			}
 		}
 	}
+}
+#nutricao-dicas {
+	article {
+		padding: 20px 15px 20px 30px;
+		border-bottom: 1px solid $primary-color;
 
+		@media(max-width: 991px) { padding-left: 15px;}
 
+		&:nth-child(odd) { background: #fafafa; }
+		.img-box {
+			background: #eee;
+			background: {
+				position: center;
+				size: cover;
+				repeat: no-repeat;
+			}
+			position:relative;
+			height: 200px;
+			padding: 15px;
+			@media(max-width: 991px) { margin: 0 15px 20px;}
+		}
+		h2 { margin:0 0 10px !important; }
+		h3 {
+			font-size: 14px;
+			margin: 0 0 20px;
+			color: #999;
+		}
+		.link { margin-bottom: 0;}
+
+		.btn-primary {
+			background: $secondary-color;
+			font-size: 14px;
+			color: #fff;
+			padding: 6px 12px;
+			border: 1px solid $secondary-color;
+			border-radius: 2px;
+			transition: $transition;
+
+			&:hover,&:active,&:focus,&:active:focus { 
+				background: $third-color;
+				text-decoration: underline;
+				border: 1px solid $third-color;
+				transition: $transition;
+			}
+		}
+	}
+
+	.pagination{
+		margin-top: 40px;
+		>li:first-child>a, .pagination>li:first-child>span {
+		    border-top-left-radius: 2px;
+    		border-bottom-left-radius: 2px;
+		}
+		>li:last-child>a, >li:last-child>span {
+    		border-top-right-radius: 2px;
+    		border-bottom-right-radius: 2px;
+    	}
+
+		>.active {
+			> a, > a:focus, > a:hover, 
+			> span, >span:focus, >span:hover {
+				background: $secondary-color;
+				border-color: $secondary-color;
+			}
+		}
+	}
 }
 
 // FOOTER
