@@ -470,6 +470,67 @@ header {
 		}
 	}
 }
+// Contato
+form {
+	margin-top: 20px;
+	
+	textarea {
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 120px;
+	}
+	.form-control {
+		box-shadow: none;
+		background: #fbfbfb;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+		margin-bottom: 10px;
+		transition: $transition;
+
+		&:focus {
+			box-shadow: none;
+			outline: none;
+			border: 1px solid $third-color;
+			transition:$transition;
+		}
+	}
+}
+.social-links {
+	border-top: 1px solid #eee;
+	padding-top: 20px;
+	a {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		transition: $transition;
+		color: #fff !important;
+
+		&:hover, &:focus { transition: $transition; }
+		+ a { margin-left: 4px;}
+
+		&.facebook { 
+			background:#4267b2;
+			&:hover, &:focus { background:lighten(#4267b2,10%); }
+		}
+		&.instagram { 
+			background:#D62976;
+			&:hover, &:focus { background:lighten(#D62976,10%); }
+		}
+		&.youtube { 
+			background:#f00;
+			&:hover, &:focus { background:lighten(#f00,10%); }
+		}
+		&.twitter { 
+			background:#1da1f2;
+			&:hover, &:focus { background:lighten(#1da1f2,10%); }
+		}
+	}
+}
+#gmaps {
+	height: 280px;
+}
 
 // FOOTER
 footer {
