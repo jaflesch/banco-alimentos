@@ -453,6 +453,35 @@ header {
 		}
 	}
 }
+.news-box {
+	position: relative;
+	min-height: 480px;
+	padding: 15px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 2px rgba(0,0,0,.2);
+	transition: $transition;
+
+	h2, p { text-align: center !important }
+
+	&:hover {
+		box-shadow:0 0 3px rgba(0,0,0,.4);
+		transition: $transition;
+	}
+
+	div:first-child  {
+		background: {
+			position:center;
+			size:cover;
+			repeat:no-repeat;
+		}
+		height: 200px;								
+	}
+	div:last-child {
+		position: absolute;
+		width: calc(100% - 30px);
+		bottom: 15px;
+	}
+}
 // Contato
 form {
 	margin-top: 20px;
