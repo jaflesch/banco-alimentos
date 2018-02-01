@@ -432,24 +432,23 @@ header {
 		}
 		.link { margin-bottom: 0;}
 	}
+}
+.pagination{
+	margin-top: 40px;
+	>li:first-child>a, .pagination>li:first-child>span {
+	    border-top-left-radius: 2px;
+		border-bottom-left-radius: 2px;
+	}
+	>li:last-child>a, >li:last-child>span {
+		border-top-right-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
 
-	.pagination{
-		margin-top: 40px;
-		>li:first-child>a, .pagination>li:first-child>span {
-		    border-top-left-radius: 2px;
-    		border-bottom-left-radius: 2px;
-		}
-		>li:last-child>a, >li:last-child>span {
-    		border-top-right-radius: 2px;
-    		border-bottom-right-radius: 2px;
-    	}
-
-		>.active {
-			> a, > a:focus, > a:hover, 
-			> span, >span:focus, >span:hover {
-				background: $secondary-color;
-				border-color: $secondary-color;
-			}
+	>.active {
+		> a, > a:focus, > a:hover, 
+		> span, >span:focus, >span:hover {
+			background: $secondary-color;
+			border-color: $secondary-color;
 		}
 	}
 }
@@ -480,6 +479,32 @@ header {
 		position: absolute;
 		width: calc(100% - 30px);
 		bottom: 15px;
+	}
+}
+.gallery-box {
+	div {
+			background: {
+			position: center;
+			repeat: no-repeat;
+			size: cover;
+		}
+		padding-bottom: 100%;
+
+		@media(max-width:991px) {
+			padding-bottom: 0;
+			height: 280px;
+		}
+	}
+	h2 {
+		text-align: center;
+		margin: 10px 0 60px !important;
+
+		a { 
+			color: $secondary-color;
+			&:hover, &:focus {
+				color: $third-color;
+			}
+		}
 	}
 }
 // Contato
