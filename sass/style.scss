@@ -291,6 +291,7 @@ header {
 		display: block;
 		text-align: center;
 		font-size: 0;
+		padding: 0 15px;
 
 		.input {
 			border-top-left-radius: 2px;
@@ -328,6 +329,14 @@ header {
 			border: 1px solid $third-color;
 			transition: $transition;
 		}
+	}
+
+	@media(max-width: 767px) {
+		.input { 
+			width: 100%;
+			margin-bottom: 4px;
+		}
+		.btn-submit { width: 100%; }
 	}
 }
 #apoiadores {
